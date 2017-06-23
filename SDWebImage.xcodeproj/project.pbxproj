@@ -39,6 +39,8 @@
 		00733A711BC4880E00A5A117 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 53922D95148C56230056699D /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00733A721BC4880E00A5A117 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AB615301192DA24600A2D8E9 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00733A731BC4880E00A5A117 /* SDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2CAE031AB4BB5400B6BC39 /* SDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0261063E1EFCCF5600BD3E73 /* SDImageCache+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0261063C1EFCCF5600BD3E73 /* SDImageCache+Addition.h */; };
+		0261063F1EFCCF5600BD3E73 /* SDImageCache+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0261063D1EFCCF5600BD3E73 /* SDImageCache+Addition.m */; };
 		4314D11E1D0E0E3B004B36C9 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = DA577CB21998E60B007367ED /* huffman.c */; };
 		4314D11F1D0E0E3B004B36C9 /* quant_levels.c in Sources */ = {isa = PBXBuildFile; fileRef = DA577CB71998E60B007367ED /* quant_levels.c */; };
 		4314D1201D0E0E3B004B36C9 /* idec.c in Sources */ = {isa = PBXBuildFile; fileRef = DA577D601998E6B2007367ED /* idec.c */; };
@@ -931,6 +933,8 @@
 
 /* Begin PBXFileReference section */
 		00733A4C1BC487C000A5A117 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0261063C1EFCCF5600BD3E73 /* SDImageCache+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDImageCache+Addition.h"; sourceTree = "<group>"; };
+		0261063D1EFCCF5600BD3E73 /* SDImageCache+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDImageCache+Addition.m"; sourceTree = "<group>"; };
 		4314D1991D0E0E3B004B36C9 /* libSDWebImage watchOS static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSDWebImage watchOS static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		431BB7031D06D2C1006A3455 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4369C2751D9807EC007E863A /* UIView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
@@ -1152,6 +1156,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0261063A1EFCCEF500BD3E73 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				0261063C1EFCCF5600BD3E73 /* SDImageCache+Addition.h */,
+				0261063D1EFCCF5600BD3E73 /* SDImageCache+Addition.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 		4369C2851D9811BB007E863A /* WebCache Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -1273,6 +1286,7 @@
 				53922DAA148C56470056699D /* Cache */,
 				53922DAC148C56DD0056699D /* Utils */,
 				53922DA9148C562D0056699D /* Categories */,
+				0261063A1EFCCEF500BD3E73 /* Additions */,
 				4369C2851D9811BB007E863A /* WebCache Categories */,
 				43CE75CD1CFE98B3006C64D0 /* FLAnimatedImage */,
 			);
@@ -1859,6 +1873,7 @@
 				43CE75761CFE9427006C64D0 /* FLAnimatedImage.h in Headers */,
 				438096721CDFC08200DC626B /* MKAnnotationView+WebCache.h in Headers */,
 				43CE757C1CFE9427006C64D0 /* FLAnimatedImageView.h in Headers */,
+				0261063E1EFCCF5600BD3E73 /* SDImageCache+Addition.h in Headers */,
 				431738821CDFC2580008FEB9 /* vp8i.h in Headers */,
 				AB615303192DA24600A2D8E9 /* UIView+WebCacheOperation.h in Headers */,
 				43DA7DDC1D1086740028BE58 /* extras.h in Headers */,
@@ -2680,6 +2695,7 @@
 				43DA7C931D1086570028BE58 /* argb_mips_dsp_r2.c in Sources */,
 				43DA7C971D1086570028BE58 /* cost_mips32.c in Sources */,
 				AB615306192DA24600A2D8E9 /* UIView+WebCacheOperation.m in Sources */,
+				0261063F1EFCCF5600BD3E73 /* SDImageCache+Addition.m in Sources */,
 				4317387A1CDFC2580008FEB9 /* buffer.c in Sources */,
 				43DA7CAB1D1086570028BE58 /* filters_sse2.c in Sources */,
 				43DA7CA91D1086570028BE58 /* enc.c in Sources */,

@@ -263,7 +263,4 @@ typedef void(^SDWebImageCalculateSizeBlock)(NSUInteger fileCount, NSUInteger tot
  */
 - (nullable NSString *)defaultCachePathForKey:(nullable NSString *)key;
 
-#pragma mark - custom
-- (void)storeImageFromOldKey:(nullable NSString *)oldKey toNewKey:(nullable NSString *)newKey;
-
 @end
